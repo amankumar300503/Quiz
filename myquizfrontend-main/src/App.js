@@ -15,7 +15,7 @@ import Profile from './components/User/Profile';
 import Dashboard from './components/User/Dashboard';
 import Scorecards from './Scorecard';
 
-axios.defaults.baseURL = "https://quiz-98w4.vercel.app"
+axios.defaults.baseURL = "https://myquizserver.vercel.app"
 axios.defaults.withCredentials = true
 
 function App() {
