@@ -9,7 +9,7 @@ const Score = require('./Schema/ScoreSchema');
 
 const app = express();
 app.use(cors({
-    origin: 'https://myquizbrainstorm.vercel.app', // Your frontend URL
+    origin: 'https://quiz-dgt3.vercel.app', // Your frontend URL
     credentials: true
 }));
 app.use(express.json())
