@@ -9,7 +9,7 @@ const Score = require('./Schema/ScoreSchema');
 
 const app = express();
 app.use(cors({
-    origin: 'https://quiz-dgt3.vercel.app', // Your frontend URL
+    origin: 'https://vercel.com/aman-kumars-projects-42ade9b5/quiz-dgt3/4P93Vxh1NgrSvc1CqVBn9mDUESAS', // Your frontend URL
     credentials: true
 }));
 app.use(express.json())
