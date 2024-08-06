@@ -9,7 +9,7 @@ const Score = require('./Schema/ScoreSchema');
 
 const app = express();
 app.use(cors({
-    origin: 'https://vercel.com/aman-kumars-projects-42ade9b5/quiz-dgt3/4P93Vxh1NgrSvc1CqVBn9mDUESAS', // Your frontend URL
+    origin: 'https://quiz-dgt3.vercel.app', // Your frontend URL
     credentials: true
 }));
 app.use(express.json())
@@ -17,7 +17,7 @@ app.use(cookieParser())
 
 const jwtSecret = "jnvsnsnfgvjs"
 
-mongoose.connect('mongodb+srv://bloguser:bloguser@cluster0.pzyg7m3.mongodb.net/Blogdata').then(
+mongoose.connect(process.env.MONGO_URL).then(
     console.log('conneected successfully to db')
 ).catch((e)=>{
     console.log('failed to connect ot db')
